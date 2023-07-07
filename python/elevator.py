@@ -1,3 +1,5 @@
+import sys
+
 def elevator(floors_to_visit):
     SINGLE_FLOOR_TRAVEL_TIME = 10
     total_floors_traveled = 0
@@ -23,7 +25,29 @@ def elevator(floors_to_visit):
     return "{0} {1}".format(travel_time, floors_visited)
 
 def main():
-    return
+    if len(sys.argv) <= 1:
+        print("ERROR: Please specify a list of floors to visit starting with the current floor. EX: python3 elevator.py 12 2 9 1 32")
+        sys.exit(1)
+
+    floors_to_visit = []
+
+    try:
+        floors_to_visit = [int(floor) for floor in sys.argv[1:]]
+    except ValueError as e:
+        print("ERROR: Failed to convert given input to ints. Input: {0} Exeption: {1}".format(sys.argv, e))
+        sys.exit(1)
+    
+    try:
+        res = elevator(floors_to_visit)
+    except Exception as e:
+        print("ERROR: Failed to run elevator on given input: {0} Exeption: {1}".format(floors_to_visit, e))
+        sys.exit(1)
+
+    # Split result by first occurance of space
+    split = res.split(' ', 1)
+    print("Total travel time: {0}".format(split[0]))
+    print("Floors visited in order: {0}".format(split[1]))
+    sys.exit()
 
 if __name__ == "__main__":
     main()

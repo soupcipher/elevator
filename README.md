@@ -2,7 +2,7 @@
 
 ## Python solution
     Input is an integer array with the first value being the starting floor
-    Returns a string in format = "TOTAL_TRAVEL_TIME FLOOR, FLOOR, FLOOR"
+    Returns a string in format = "TOTAL_TRAVEL_TIME FLOOR_VISITED1, FLOOR_VISITED2, FLOOR_VISITED3"
 
     Script ignores duplicate floors back to back (can only visit a floor once without leaving)
     Assumes elevator has "infinite" positive and negative floors and there are no gaps in numbers in the elevator.
@@ -11,8 +11,12 @@
     Dependencies: python >= 3.0
     Runtime: O(n) where n is length of input array (num of floors to visit)
 
-    To run python script:
-    $ python3 python/elevator.py 
+    To run python script from python:
+    elevator([12, 2, 9, 1, 32])
+
+    To run python script with command line inputs: 
+    (Enter list of floors separated by spaces with no commas or special characters
+    $ python3 python/elevator.py 12 2 9 1 32
 
     TESTS:
     Dependencies to run tests: Python 3.7+ or PyPy3
@@ -31,7 +35,7 @@
 
 ### TODOS:
 - ~~Python - return output instead of printing~~
-- Python - allow user to input example through command line
+- ~~Python - allow user to input example through command line~~
 - ~~Write tests for python solution~~
 - Write a solution as a bash script
 - Write a solution in Java
