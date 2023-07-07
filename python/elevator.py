@@ -1,6 +1,5 @@
 def elevator(floors_to_visit):
     SINGLE_FLOOR_TRAVEL_TIME = 10
-    travel_time = 0
     total_floors_traveled = 0
     floors_visited = ""
 
