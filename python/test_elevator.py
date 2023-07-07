@@ -15,6 +15,9 @@ def test_large_travel_time():
 def test_repeat_floors():
     assert elevator([44, 44, 45, 44, 44]) == "20 44, 45, 44"
 
+def test_all_repeat_floors():
+    assert elevator([3, 3, 3, 3, 3]) == "0 3"
+
 def test_consecutive():
     assert elevator([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]) == "140 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15"
 
@@ -30,6 +33,9 @@ def test_superstitous():
 def test_china():
     assert elevator([-1, 2, 3, 5, 10, 13]) == "140 -1, 2, 3, 5, 10, 13"
 
+def test_large_neg_pos():
+    assert elevator([-989, -500, 0, 500, 989]) == "19780 -989, -500, 0, 500, 989"
+    
 # Floors 1 to 99
 def test_elevator_to_sky():
     long_list = list(range(1, 100))
