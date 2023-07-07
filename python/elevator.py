@@ -1,6 +1,3 @@
-# Alyssa Feagans 7/6/2023
-# Outside Analytics elevator problem
-
 def elevator(floors_to_visit):
     SINGLE_FLOOR_TRAVEL_TIME = 10
     travel_time = 0
