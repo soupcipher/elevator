@@ -17,14 +17,12 @@ def elevator(floors_to_visit):
         floors_visited += str(floors_to_visit[i])
 
     travel_time = SINGLE_FLOOR_TRAVEL_TIME * total_floors_traveled
-    print("Total Travel Time = {0}".format(travel_time))
-    print("Floors visited in order = {0}".format(floors_visited))
-    return
+    return "{0} {1}".format(travel_time, floors_visited)
 
 def main():
-    elevator([12, 2, 9, 1, 32])
-    elevator([12])
-    elevator([])
+    print(elevator([12, 2, 9, 1, 32]))
+    print(elevator([12]))
+    print(elevator([]))
     return
 
 if __name__ == "__main__":
