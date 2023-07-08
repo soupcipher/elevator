@@ -81,4 +81,4 @@
 - ~~Python - create animation for elevator in terminal~~
 - ~~Write tests for python solution~~
 - ~~Write a solution as a bash script~~
-- Test in parallels on windows machine
+- ~~Test in parallels on windows machine~~
