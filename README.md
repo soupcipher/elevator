@@ -48,7 +48,10 @@
     (Enter list of floors separated by spaces with no commas or special characters
     $ python3 python/elevator_animation.py 12 2 9 1 32
 
-    Output will be elevator animation showing what floors we are visiting and opening doors at and showing direction of elevator at each floor traveled through.
+    Outputs elevator animation showing what floors we are visiting and opening doors at and showing direction of elevator at each floor traveled through.
+    Prints results to stdout:
+        Total travel time: travel_time
+        Floors visited in order = floors_visited
 
 ## Bash Script solution
     Input is an integer array with the first value being the starting floor
