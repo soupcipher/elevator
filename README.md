@@ -1,5 +1,7 @@
 # Alyssa Feagans 7/6/2023 - Outside Analytics Elevator Problem
 
+![](gif/animation.gif)
+
 ## Python solution
     Input is an integer array with the first value being the starting floor
     Returns a string in format = "TOTAL_TRAVEL_TIME FLOOR_VISITED1, FLOOR_VISITED2, FLOOR_VISITED3"
@@ -37,6 +39,17 @@
     To get more info on a test:     
     $ pytest python/test_elevator.py -vv
 
+## Python Animation solution
+    Runtime: O(n + m)
+    n is length of input array (num of floors to visit)
+    m is the max integer value in floors to visit
+
+    To run python script with command line inputs: 
+    (Enter list of floors separated by spaces with no commas or special characters
+    $ python3 python/elevator_animation.py 12 2 9 1 32
+
+    Output will be elevator animation showing what floors we are visiting and opening doors at and showing direction of elevator at each floor traveled through.
+
 ## Bash Script solution
     Input is an integer array with the first value being the starting floor
     Prints results to stdout:
@@ -62,6 +75,7 @@
 ### TODOS:
 - ~~Python - return output instead of printing~~
 - ~~Python - allow user to input example through command line~~
+- ~~Python - create animation for elevator in terminal~~
 - ~~Write tests for python solution~~
 - ~~Write a solution as a bash script~~
 - Test in parallels on windows machine
