@@ -64,6 +64,4 @@
 - ~~Python - allow user to input example through command line~~
 - ~~Write tests for python solution~~
 - ~~Write a solution as a bash script~~
-- Write a solution in Java
-- Write a solution in C
 - Test in parallels on windows machine
