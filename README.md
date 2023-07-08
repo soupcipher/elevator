@@ -40,7 +40,7 @@
     $ pytest python/test_elevator.py -vv
 
 ## Python Animation solution
-    Best Case Runtime: O(n+m)
+    Best Case Runtime: O(n + m)
     n is length of input array (num of floors to visit)
     m is the max difference between two consecutive floors to visit
 
