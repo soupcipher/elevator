@@ -4,6 +4,10 @@
     Input is an integer array with the first value being the starting floor
     Returns a string in format = "TOTAL_TRAVEL_TIME FLOOR_VISITED1, FLOOR_VISITED2, FLOOR_VISITED3"
 
+    If running from command line, prints results to stdout:
+        Total travel time: travel_time
+        Floors visited in order = floors_visited
+
     Script ignores duplicate floors back to back (can only visit a floor once without leaving)
     Assumes elevator has "infinite" positive and negative floors and there are no gaps in numbers in the elevator.
     Infinite being restricted to the available memory on the system being used to run.
@@ -33,11 +37,33 @@
     To get more info on a test:     
     $ pytest python/test_elevator.py -vv
 
+## Bash Script solution
+    Input is an integer array with the first value being the starting floor
+    Prints results to stdout:
+        Total travel time: travel_time
+        Floors visited in order = floors_visited
+
+    Script ignores duplicate floors back to back (can only visit a floor once without leaving)
+    Assumes elevator has "infinite" positive and negative floors and there are no gaps in numbers in the elevator.
+    Infinite being restricted to the available memory on the system being used to run.
+
+    Runtime: O(n) where n is length of input array (num of floors to visit)
+
+    Make file executable:
+    $ chmod +x bash/elevator.sh
+
+    Run bash script:
+    If running on Windows, need WSL / Git Bash or another Bash shell for Windows. 
+    ./bash/elevator.sh
+
+    Running bash script will run all tests in elevator.sh
+
+
 ### TODOS:
 - ~~Python - return output instead of printing~~
 - ~~Python - allow user to input example through command line~~
 - ~~Write tests for python solution~~
-- Write a solution as a bash script
+- ~~Write a solution as a bash script~~
 - Write a solution in Java
 - Write a solution in C
 - Test in parallels on windows machine
