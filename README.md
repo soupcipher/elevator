@@ -15,7 +15,7 @@
     Infinite being restricted to the available memory on the system being used to run.
 
     Dependencies: python >= 3.0
-    Runtime: O(n) where n is length of input array (num of floors to visit)
+    Best Case & Worst Case Runtime: O(n) where n is length of input array (num of floors to visit)
 
     To run python script from python:
     elevator([12, 2, 9, 1, 32])
@@ -40,9 +40,27 @@
     $ pytest python/test_elevator.py -vv
 
 ## Python Animation solution
-    Runtime: O(n + m)
+    Best Case Runtime: O(n + m)
     n is length of input array (num of floors to visit)
-    m is the max integer value in floors to visit
+    m is the max difference between two consecutive floors to visit
+
+    EX: Input array = [4, 0, 20, 0]
+    Outer loop will execute n=4 times. 
+    The inner loop will execute a different number of times for each floor difference. The max floor diff = 20.
+    For this example, the max floor difference (m) will drive the runtime since it is the larger value.
+
+    EX: Input array = [4, 1, 0, 2, 0, 1, -1, 0]
+    Outer loop will execute n=8 times. 
+    The inner loop will execute a different number of times for each floor difference. The max floor diff = 3.
+    For this example, the length of the input array (n) will drive the runtime since it is the larger value.
+
+    Worst Case Runtime: O(n * m)
+    n is length of input array (num of floors to visit)
+    m is the max difference between two consecutive floors to visit
+
+    EX: Input array = [999, 0, 999, 0]
+    Outer loop will execute n=4 times. 
+    Each of those times, the inner loop will execute m=999 times since the difference of each floor to visit is the same.
 
     To run python script with command line inputs: 
     (Enter list of floors separated by spaces with no commas or special characters
@@ -63,7 +81,7 @@
     Assumes elevator has "infinite" positive and negative floors and there are no gaps in numbers in the elevator.
     Infinite being restricted to the available memory on the system being used to run.
 
-    Runtime: O(n) where n is length of input array (num of floors to visit)
+    Best Case & Worst Case Runtime: O(n) where n is length of input array (num of floors to visit)
 
     Make file executable:
     $ chmod +x bash/elevator.sh
