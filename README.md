@@ -1,4 +1,4 @@
-# Alyssa Feagans 7/6/2023 - Outside Analytics Elevator Problem
+# 7/6/2023 Elevator Problem
 
 ![](gif/animation.gif)
 
